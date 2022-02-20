@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--lightblue:#81b5e4;--darkblue:#3f8ccc;}
+
+    @font-face {
+      font-family: myfont;
+      /* src: url(bake.woff); */
+      /* src: url(font.ttf); */
+      src: url(font2.ttf);
+    }
+
+    body {background: var(--darkblue); font-family: myfont;}
+    .slanted {
+      clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0 66%);
+      z-index: -1; position: relative;
+    }
+    .slanted2 {
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+      z-index: -1; position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- main wrapper -->
+  <div class="text-center slanted2" style="background: var(--lightblue);">
+
+    <div style="background: white; height: 115px; position: relative; z-index: -2; margin-bottom: -30px;"></div>
+
+    <!-- site logo -->
+    <img src="logo.png" style="position: absolute; transform: translate(-50%, -70%);" height="111px" alt="sakysbakery.com logo" />
+
+    <!-- page title -->
+    <div class="text-white slanted pb-5" style="background: var(--darkblue);">
+      <br><br>
+      <h1>sakisbakery.com is currently down for maintenance!</h1>
+    </div>
+
+    <!-- page content -->
+    <br>
+
+    <img src="roomba.gif" style="width:50%" alt="cat on roomba" />
+
+    <br><br><br><br><br><br><br>
+
+  </div>
+  <!-- main wrapper end -->
+
+
+  <!-- footer -->
+  <div class="text-center" style="position: relative;">
+    <img style="position:absolute; top:-60px; transform: translate(-50%, -50%); left:50%" src="logocookie.png" height="111px" alt="sakysbakery.com logo with a cookie" />
+    <h3><a class="text-white" href="mailto:sakisbakery@gmail.com">sakisbakery@gmail.com</a></h3>
+  </div>
+
+</body>
